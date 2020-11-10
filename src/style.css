@@ -1,0 +1,129 @@
+body {
+  background: url('https://i.ytimg.com/vi/qk1XUeVcpfk/hqdefault.jpg');
+  color: #fff;
+}
+h1 {
+  color: #63c5bc;
+}
+.faded {
+  color: #777;
+}
+#quiz-counter {
+  color: #88449a;
+}
+.quiz-container {
+    padding: 0.25em;
+    max-width: 300px;
+    margin: 3em auto;
+}
+
+.quiz-container a {
+    text-decoration: none;
+    color: #333;
+}
+
+#quiz-header,
+#quiz-start-screen,
+#quiz-results-screen,
+#quiz-counter {
+    text-align: center;
+}
+
+.question {
+    font-size: 1.25em;
+}
+
+.answers {
+    list-style: none;
+    padding: 0;
+}
+
+.answers a {
+    display: block;
+    padding: 0.5em 1em;
+    margin-bottom: 0em;
+    background: #fff;
+}
+
+.answers a.correct {
+    background: #090;
+}
+.answers a.incorrect {
+    background: #c00;
+}
+
+.answers a.correct,
+.answers a.incorrect {
+    color: #fff;
+}
+
+#quiz-controls {
+    background: #63c5bc;
+    color: #111;
+    padding: 0.25em 0.5em 0.5em;
+    text-align: center;
+}
+
+#quiz-response {}
+#quiz-results {
+    font-size: 1.25em;
+}
+
+#quiz-buttons a,
+.quiz-container .quiz-button {
+    display: inline-block;
+    padding: 0.5em 1em;
+    background: #88449a;
+    color: #fff;
+}
+#quiz-buttons a {
+    background: #fff;
+    color: #333;
+}
+
+/* Quiz State Overrides */
+
+.quiz-results-state #quiz-controls {
+    background: none;
+    padding: 0;
+}
+.quiz-results-state #quiz-buttons a {
+    background: #88449a;
+    color: #fff;
+}
+
+
+.textboard {
+  width: 50%;
+  height: 120px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  color: #FFF;
+  border: 2px solid #000;
+  border-radius: 5px;
+  box-shadow: 0 0 0 4px #FFF inset;
+  background-color: rgba(0,0,0,0.9);
+}
+.test1 {
+  width: 96%;
+  margin: 2%;
+  white-space: pre;
+  overflow: hidden;
+  -webkit-animation: ozDq 5s steps(70, end) ;
+  /* プロパティは順に name, duration, timing-function です */
+  }
+.test1:after {
+  content: '▶';
+  -webkit-animation: ozPulse 1s infinite ease;
+  /* プロパティは順に name, duration, iteration-count, timing-function です */
+}
+@-webkit-keyframes ozDq { from { width: 0; } } /* 開始地点の指定 */
+@-moz-keyframes ozDq { from { width: 0 } }
+@-webkit-keyframes ozPulse { { /* 透明度の指定 */
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+@-moz-keyframes ozPulse {
+from { opacity: 1; }
+to { opacity: 0; }
+}
